@@ -1,12 +1,12 @@
-type Product{
+type Product {
     id: ID,
     name: String,
     category: String,
-    price: Float
+    price: Float,
     stock: Int
 }
 
-type Query{
-    products: [Product]
-  productsByCategory(category: String): [Product]
+type Query {
+           products: [Product],
+          productsByCategory(category: String): [Product]
 }
